@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 module.exports = async () => {
+  mongoose.set("strictQuery", false);
+
   return mongoose
     .connect(process.env.MONGO_URL)
     .then(() => {

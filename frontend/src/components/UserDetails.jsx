@@ -106,7 +106,7 @@ const UserDetails = () => {
   if (loading) return <h3>Loading...</h3>;
 
   return (
-    <>
+    <div className="UserDetails">
       <div>
         <input
           type="text"
@@ -166,7 +166,7 @@ const UserDetails = () => {
                   </td>
                   <td>{login.username}</td>
                   <td>
-                    {name.title} {name.first} {name.last}
+                    {name.title}. {name.first} {name.last}
                   </td>
                   <td>{email}</td>
                   <td>{phone}</td>
@@ -196,7 +196,7 @@ const UserDetails = () => {
         disabledClassName={"pagination_link_disabled"}
         activeClassName={"pagination_link_active"}
       />
-    </>
+    </div>
   );
 };
 

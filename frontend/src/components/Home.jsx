@@ -18,6 +18,7 @@ const Home = () => {
       // alert("Fetch Succesful");
     } catch (err) {
       console.log("err:", err);
+      setIsFetching(false);
     }
   };
 
@@ -41,9 +42,13 @@ const Home = () => {
 
   return (
     <div className="Home">
+      <h1>Home Page</h1>
+
       <button onClick={handleFetch}>Fetch Users</button>
       <button onClick={handleDelete}>Delete Users</button>
       <button onClick={handleDetails}>User Details</button>
+
+      <p>{isFetching ? "Fetching..." : null}</p>
     </div>
   );
 };

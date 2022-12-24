@@ -1,15 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
   margin-top: 11px;
+  display: grid;
+  place-items: center;
 }
 
-.Home {
+/* .Home {
   border: 1px solid red;
+} */
+
+.Home button {
+  margin: 11px;
+  padding: 11px;
+  cursor: pointer;
+}
+/* 
+.UserDetails {
+  border: 1px solid red;
+} */
+
+.UserDetails input {
+  padding: 3px;
+  margin-bottom: 3px;
 }
 
-.Searchbtn {
-  display: flex;
-  justify-content: space-evenly;
+.UserDetails select {
+  margin: 7px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+table,
+th,
+td {
+  margin-top: 11px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.UserDetails img {
+  margin: 11px;
+  border-radius: 22px;
 }
 
 /* Pagination */
